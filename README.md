@@ -1,1 +1,3 @@
-# cdn-storage.github.io
+# Information / Информация
+
+CDN Storage.
