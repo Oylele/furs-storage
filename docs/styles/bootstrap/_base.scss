@@ -1,0 +1,37 @@
+html,
+body {
+  @include font-base();
+}
+
+pre,
+code {
+  @include font-mono();
+}
+
+code {
+  white-space: nowrap;
+}
+
+pre {
+  background-color: #f8f9fa;
+  border-radius: .25rem;
+  padding: 1rem;
+
+  > code {
+    display: block;
+    white-space: pre;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @include font-cond();
+  }
+}
+
+.navbar {
+  @include font-cond();
+
+  &-nav {
+  }
+}

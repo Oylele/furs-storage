@@ -1,0 +1,41 @@
+html {
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .sidebar {
+        &-heading {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    .page {
+        .content {
+            &__default {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-family: 'Roboto Condensed', sans-serif;
+                    text-transform: uppercase;
+                }
+
+                pre,
+                code,
+                kbd {
+                    font-family: 'Fira Code', monospace;
+                }
+
+                p {
+                    > code,
+                    > kbd {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

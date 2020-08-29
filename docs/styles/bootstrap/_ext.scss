@@ -1,0 +1,39 @@
+.is-blur {
+  filter: blur(8px);
+}
+
+.is-font-cond {
+  @include font-cond();
+}
+
+.btn {
+  &.is-label {
+    padding: 0;
+
+    > span {
+      display: flex;
+
+      span {
+        &:first-child {
+          padding: .375rem .75rem;
+          background: rgba(0, 0, 0, .15);
+        }
+
+        &:last-child {
+          padding: .375rem .75rem;
+        }
+      }
+    }
+  }
+}
+
+.figure {
+  &.is-table {
+    display: inline-table;
+
+    .figure-caption {
+      display: table-caption;
+      caption-side: bottom;
+    }
+  }
+}

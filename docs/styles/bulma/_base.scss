@@ -1,0 +1,101 @@
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+code,
+pre {
+	font-family: 'Fira Code', monospace;
+}
+
+code {
+	white-space: nowrap;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		@include font-condensed();
+	}
+}
+
+.hero {
+	&-head,
+	&-foot {
+		@include font-condensed();
+	}
+}
+
+.navbar {
+	@include font-condensed();
+
+	&.has-shadow {
+		box-shadow: 0 2px 3px 0 rgba(10, 10, 10, .1);
+	}
+}
+
+.modal {
+	&-card {
+		&-foot {
+			justify-content: right;
+		}
+	}
+}
+
+.ext-is-blur {
+	filter: blur(8px);
+}
+
+#scrollToTop {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+
+	a {
+		display: block;
+	}
+}
+
+#particles-js {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+
+[data-repo-info="description"] {
+	min-height: 3rem;
+}
+
+.page-indicator {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	animation: page-indicator-hide 0s ease-in 2s forwards;
+	animation-fill-mode: forwards;
+}
+
+.ext-is-rounded {
+	border-radius: .25rem;
+}
+
+.card {
+	.media-content {
+		overflow: hidden;
+		.title {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+
+.ext-hide {
+	display: none;
+}
+
+.ext-emoji {
+	width: 1.45rem;
+}
