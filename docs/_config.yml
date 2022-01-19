@@ -1,2 +1,8 @@
 title: "CDN Storage"
-description: "CDN storage service."
+description: ""
+lang: "ru_RU"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
